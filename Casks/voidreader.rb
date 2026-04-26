@@ -1,6 +1,6 @@
 cask "voidreader" do
-  version "1.1.0"
-  sha256 "9e558095da00d54bf16c84df825eb721b99478448f50ff116c99dc5dd8637636"
+  version "1.2.0"
+  sha256 "559d111eb091849cdbe42dcf8a7a656c2088272b94e7c0a17e695570943127bb"
 
   url "https://github.com/lazypower/VoidReader/releases/download/v#{version}/VoidReader_v#{version}.dmg"
   name "VoidReader"
