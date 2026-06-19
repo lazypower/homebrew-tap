@@ -1,8 +1,8 @@
 class SparkTools < Formula
   desc "Pure Go toolchain for local LLM workflows on DGX Spark hardware"
   homepage "https://github.com/lazypower/spark-tools"
-  license "MIT"
   version "0.3.0"
+  license "MIT"
 
   on_macos do
     on_arm do
