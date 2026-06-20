@@ -1,35 +1,47 @@
 class Clorch < Formula
   desc "Command center for your Claude Code fleet"
   homepage "https://github.com/lazypower/clorch"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/lazypower/clorch/releases/download/v#{version}/clorch-darwin-arm64"
-      sha256 "fa12bfd8c515f8ae08759ea6870e7ce313fd32f60e0eee2d62b34af6ba61b179"
+      sha256 "1ea875233313f0b3472da70005e8f935ca12c7d0b198585ad6314ffcef62ab63"
+
+      def install
+        bin.install "clorch-darwin-arm64" => "clorch"
+      end
     end
 
     on_intel do
       url "https://github.com/lazypower/clorch/releases/download/v#{version}/clorch-darwin-amd64"
-      sha256 "a81413bbd1434c3a220f609264e77aa4e8e5a63ffebe020da8decff93bf1032e"
+      sha256 "e49a3d924369604203691fa1c55eff8c6401b721eb21b97a7db69042371f237d"
+
+      def install
+        bin.install "clorch-darwin-amd64" => "clorch"
+      end
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/lazypower/clorch/releases/download/v#{version}/clorch-linux-arm64"
-      sha256 "96f5f6f1771448df7f60435c39f14d4ed721270123b2e93ea9eda518e8b1aede"
+      sha256 "9edcffc607fe65bcc438c9b15957d72806af1577e1ca336ae028f4fc5954ca8b"
+
+      def install
+        bin.install "clorch-linux-arm64" => "clorch"
+      end
     end
 
     on_intel do
       url "https://github.com/lazypower/clorch/releases/download/v#{version}/clorch-linux-amd64"
-      sha256 "2e299865c1181c249e9061148d0b6569ee4a5a2b29cd1809ccd5b024bb66a3ec"
-    end
-  end
+      sha256 "c312cfbae3a6b09784640ac0a351fe7772485ef2c9cd891f74dfe3f8f6d0e5b2"
 
-  def install
-    bin.install Dir["clorch-*"].first => "clorch"
+      def install
+        bin.install "clorch-linux-amd64" => "clorch"
+      end
+    end
   end
 
   test do
