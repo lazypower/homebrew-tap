@@ -1,7 +1,7 @@
 class ContinuityDev < Formula
   desc "Persistent memory for AI coding agents (rolling dev build of main)"
   homepage "https://github.com/lazypower/continuity"
-  version "2026.11.24.005819"
+  version "2026.11.26.173309"
   license "MIT"
 
   # Tracks the tip of main via the rolling "dev" prerelease and installs
@@ -12,7 +12,7 @@ class ContinuityDev < Formula
   on_macos do
     on_arm do
       url "https://github.com/lazypower/continuity/releases/download/dev/continuity-darwin-arm64"
-      sha256 "73557a2ef0ebd1815f41b5b4b3800cf9e68b10402c754c6d1b6b304a05cd6e04"
+      sha256 "bd16ca7a0c47f33fd49326c03f5901e0be897439fcfe4d22442edc90c70a170d"
 
       def install
         bin.install "continuity-darwin-arm64" => "continuity"
@@ -21,7 +21,7 @@ class ContinuityDev < Formula
 
     on_intel do
       url "https://github.com/lazypower/continuity/releases/download/dev/continuity-darwin-amd64"
-      sha256 "3ca9324f2d6e356a3ccaf6107217c912c9ab1ca6a7bc887192b036e7911eb667"
+      sha256 "a993838309f2dcc105d3582f9c356200c279d60c4d4aaf4141d5009958e2a224"
 
       def install
         bin.install "continuity-darwin-amd64" => "continuity"
@@ -32,7 +32,7 @@ class ContinuityDev < Formula
   on_linux do
     on_arm do
       url "https://github.com/lazypower/continuity/releases/download/dev/continuity-linux-arm64"
-      sha256 "84d0465c4215bc395d74823be5afc0eda7c4b473c569a05fe712da46eaa82b3c"
+      sha256 "1753964f965a44dc20195fc35a4e80216abd0b585c92863a973e69b7292a5088"
 
       def install
         bin.install "continuity-linux-arm64" => "continuity"
@@ -41,7 +41,7 @@ class ContinuityDev < Formula
 
     on_intel do
       url "https://github.com/lazypower/continuity/releases/download/dev/continuity-linux-amd64"
-      sha256 "f467589a616a956212c42ad4f16f0bd8d606f121e0289d9504ffa41e8242e5cc"
+      sha256 "2b7dc22b42b7825c8ce024aa4b230d756db23ff9c824717a3aedca2d96e71f95"
 
       def install
         bin.install "continuity-linux-amd64" => "continuity"
